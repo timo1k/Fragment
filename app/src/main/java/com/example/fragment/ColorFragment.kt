@@ -16,7 +16,12 @@ class ColorFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_color, container, false).apply {
-            findViewById<FrameLayout>(R.id.frame).setOnClickListener{
+//            findViewById<FrameLayout>(R.id.frame).setOnClickListener{
+//                setBackgroundColor(Color.parseColor(
+//                    arrayOf("blue","cyan","green").random()
+//                ))
+//            }
+            setOnClickListener{
                 setBackgroundColor(Color.parseColor(
                     arrayOf("blue","cyan","green").random()
                 ))

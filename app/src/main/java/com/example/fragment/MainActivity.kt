@@ -11,5 +11,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //adding fragment using code
+        supportFragmentManager.beginTransaction().add(R.id.fragmentContainerView2, ColorFragment()).commit()
     }
 }
